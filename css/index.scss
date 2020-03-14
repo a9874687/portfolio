@@ -1,10 +1,13 @@
+//--------------------------模組載入--------------------------//
+@import "reset";
+@import "mixin";
 
 //--------------------------變數--------------------------//
 $linkcolor:black;
 $font-l:20px;
 $font-m:18px;
 $font-s:16px;
-$font-h1:80px;
+$font-h1:50px;
 $font-h2:40px;
 $font-p:30px;
 $font-style:"Noto Sans TC";
@@ -50,11 +53,8 @@ $font-style:"Noto Sans TC";
 }
 //--------------------------banner--------------------------//
 .banner{
+    @include bgc-cover();
     background-image: url("../img/bench-accounting-nvzvOPQW0gc-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     height: 1000px;
 }
 .main-title{
@@ -196,11 +196,8 @@ $font-style:"Noto Sans TC";
 }
 //--------------------------works--------------------------//
 .works{
+    @include bgc-cover();
     background-image: url("../img/work-banner.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     height: 600px;
     .container{
         max-width: 1140px;

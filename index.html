@@ -4,11 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.css-master/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script src="js/WOW-master/dist/wow.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-smoove/dist/jquery.smoove.min.js"></script>
+    <script src="js/index.js"></script>
     <title>BRYAN DESIGN</title>
 </head>
 
@@ -35,7 +39,7 @@
         </div>
     </div>
     <div class="banner">
-        <div class="main-title">
+        <div class="main-title wow fadeIn" data-wow-duration="0.8s" data-wow-delay="1s" >
             <h1>BRYAN</h1>
             <h1>PORTFOLIO</h1>
             <p>Welcome To My Work</p>
@@ -49,10 +53,10 @@
                 <hr>
             </div>
             <div class="about-content">
-                <div class="about-img">
+                <div class="about-img wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                     <img src="img/about-img.jpg" alt="">
                 </div>
-                <div class="about-artical">
+                <div class="about-artical wow fadeInRight" data-wow-duration="1s" data-wow-delay="1.2s">
                     <p>
                         Hi, I am Bryan.
 
@@ -65,7 +69,7 @@
                     </p>
                 </div>
             </div>
-            <div class="resume">
+            <div class="resume wow jackInTheBox" data-wow-duration="1s" data-wow-delay="1.3s">
                 <a href="https://drive.google.com/file/d/1G9F8vrJMSj4ESxHDVBA_6I1HOhXFVp3n/view" target="_blank">
                     resume
                 </a>
@@ -78,7 +82,7 @@
                 <h2>SKILL</h2>
                 <hr>
             </div>
-            <ul>
+            <ul class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
                 <li>
                     <div class="skill-box">
                         <img src="img/skill-uiux.png" alt="" class="color">
@@ -120,7 +124,7 @@
                 <h2>WORKS</h2>
                 <hr>
             </div>
-            <ul>
+            <ul class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.4s">
                 <li>
                     <div class="work-box">
                         <a href="https://a9874687.github.io/Foodie-Dog/" target="_blank">
@@ -191,7 +195,7 @@
         </div>
     </div>
     <div class="contact">
-        <div class="container">
+        <div class="container wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">
             <div class="contact-title">
                 <h2>CONTACT</h2>
                 <hr>
@@ -230,6 +234,9 @@
             <h4>Copyright © Bryan All rights reserved</h4>
         </div>
     </div>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
