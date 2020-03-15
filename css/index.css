@@ -286,6 +286,12 @@ table {
   width: 60%;
 }
 
+#skill .container ul li .skill-box:hover {
+  -webkit-transform: rotate(1080deg) scale(1.3);
+          transform: rotate(1080deg) scale(1.3);
+  background: none;
+}
+
 #skill .container ul li .skill-main {
   padding-top: 10px;
 }
