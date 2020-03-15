@@ -39,7 +39,7 @@ $( document ).ready(function() {
           var target = $(this).attr("href");
           var targetPos = $(target).offset().top;
           var targetHeight = $(target).outerHeight();
-          if(targetPos  <= scrollPos &&(targetPos + targetHeight) > scrollPos){
+          if(targetPos -1 <= scrollPos &&(targetPos + targetHeight) > scrollPos){
             $(".scrollTop").removeClass("active")
             $(this).addClass("active");
           }else{
@@ -47,5 +47,10 @@ $( document ).ready(function() {
           }
         });
       });
+
+       //------------------------手機選單------------------------------//
+       $(".menushow").click(function(){
+         $(".menu ul").fadeToggle("slow");
+       })  //打開選單
   });
   
