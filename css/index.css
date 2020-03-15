@@ -53,6 +53,10 @@ table {
           box-sizing: border-box;
 }
 
+.active {
+  border-bottom: 3px solid red;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,7 +104,7 @@ table {
   font-weight: bold;
 }
 
-.banner {
+#banner {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -115,20 +119,24 @@ table {
 }
 
 .main-title h1 {
-  font-size: 50px;
+  font-size: 48px;
 }
 
 .main-title p {
   line-height: 1.5em;
   letter-spacing: 0.5px;
-  font-size: 30px;
+  font-size: 24px;
 }
 
-.about {
-  background-color: #dce0e7;
+#about {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/about-bgc.jpg");
 }
 
-.about .container {
+#about .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -141,54 +149,56 @@ table {
   padding-top: 30px;
 }
 
-.about .container .about-title {
+#about .container .about-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.about .container .about-title h2 {
+#about .container .about-title h2 {
   font-size: 40px;
 }
 
-.about .container .about-title hr {
+#about .container .about-title hr {
   width: 50px;
   height: 4px;
   margin: 30px auto;
   background-color: #f04640;
 }
 
-.about .container .about-content {
+#about .container .about-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about .container .about-content .about-img {
+#about .container .about-content .about-img {
   width: 50%;
   margin-right: 30px;
 }
 
-.about .container .about-content .about-img img {
+#about .container .about-content .about-img img {
   width: 100%;
 }
 
-.about .container .about-content .about-artical {
+#about .container .about-content .about-artical {
   width: 100%;
 }
 
-.about .container .about-content .about-artical p {
+#about .container .about-content .about-artical p {
   line-height: 2em;
-  font-size: 30px;
+  font-size: 24px;
+  font-family: "Noto Sans TC";
 }
 
-.about .container .resume {
+#about .container .resume {
   text-align: right;
   padding-top: 30px;
   padding-bottom: 30px;
   width: 100%;
 }
 
-.about .container .resume a {
+#about .container .resume a {
   background-color: #f5f5f5;
   border-radius: 10px;
   text-decoration: none;
@@ -198,17 +208,17 @@ table {
   color: black;
 }
 
-.about .container .resume a:hover {
+#about .container .resume a:hover {
   background-color: black;
   color: white;
 }
 
-.skill {
+#skill {
   min-height: 600px;
   background-color: #fff;
 }
 
-.skill .container {
+#skill .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -220,35 +230,35 @@ table {
   margin: 0 auto;
 }
 
-.skill .container .skill-title {
+#skill .container .skill-title {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.skill .container .skill-title h2 {
+#skill .container .skill-title h2 {
   font-size: 40px;
 }
 
-.skill .container .skill-title hr {
+#skill .container .skill-title hr {
   width: 50px;
   height: 4px;
   margin: 30px auto;
   background-color: #f04640;
 }
 
-.skill .container ul {
+#skill .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.skill .container ul li {
+#skill .container ul li {
   width: 30%;
   margin-left: 10%;
 }
 
-.skill .container ul li .skill-box {
+#skill .container ul li .skill-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,75 +282,75 @@ table {
   overflow: hidden;
 }
 
-.skill .container ul li .skill-box img {
+#skill .container ul li .skill-box img {
   width: 60%;
 }
 
-.skill .container ul li .skill-main {
+#skill .container ul li .skill-main {
   padding-top: 10px;
 }
 
-.skill .container ul li .skill-main h3 {
+#skill .container ul li .skill-main h3 {
   text-indent: 13%;
   padding-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
 }
 
-.skill .container ul li .skill-main p {
+#skill .container ul li .skill-main p {
   color: #777;
   line-height: 1.4;
   font-size: 16px;
   font-family: "Noto Sans TC";
 }
 
-.works {
+#works {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-image: url("../img/work-banner.jpg");
-  height: 600px;
 }
 
-.works .container {
+#works .container {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.works .container .works-title {
+#works .container .works-title {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
-.works .container .works-title h2 {
+#works .container .works-title h2 {
   font-size: 40px;
 }
 
-.works .container .works-title hr {
+#works .container .works-title hr {
   width: 50px;
   height: 4px;
   margin: 30px auto;
   background-color: #f04640;
 }
 
-.works .container ul {
+#works .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 
-.works .container ul li {
+#works .container ul li {
   width: 31.3333%;
   margin-right: 1%;
   margin-left: 1%;
   margin-top: 1%;
 }
 
-.works .container ul li .work-box {
+#works .container ul li .work-box {
   position: relative;
   width: 100%;
   max-width: 320px;
@@ -349,16 +359,16 @@ table {
   margin: 5px auto;
 }
 
-.works .container ul li .work-box a {
+#works .container ul li .work-box a {
   display: block;
 }
 
-.works .container ul li .work-box a img {
+#works .container ul li .work-box a img {
   width: 100%;
   height: 100%;
 }
 
-.works .container ul li .work-box a .info {
+#works .container ul li .work-box a .info {
   position: absolute;
   top: 0;
   width: 100%;
@@ -372,18 +382,22 @@ table {
   text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
   background-color: rgba(0, 0, 0, 0.6);
   letter-spacing: 0.75px;
-  opacity: 0;
-}
-
-.works .container ul li .work-box a .info:hover {
   opacity: 1;
 }
 
-.contact {
-  background-color: #fff;
+#works .container ul li .work-box a .info:hover {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
-.contact .container {
+#contact {
+  background-color: #fff;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+#contact .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -395,56 +409,56 @@ table {
   margin: 0 auto;
 }
 
-.contact .container .contact-title {
+#contact .container .contact-title {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.contact .container .contact-title h2 {
+#contact .container .contact-title h2 {
   font-size: 40px;
 }
 
-.contact .container .contact-title hr {
+#contact .container .contact-title hr {
   width: 50px;
   height: 4px;
   margin: 30px auto;
   background-color: #f04640;
 }
 
-.contact .container .contact-mug {
+#contact .container .contact-mug {
   text-align: center;
 }
 
-.contact .container .contact-mug img {
+#contact .container .contact-mug img {
   width: 250px;
   border-radius: 50%;
   border: 7px solid #eee;
   margin: 15px 0;
 }
 
-.contact .container .community {
+#contact .container .community {
   text-align: center;
   padding-bottom: 30px;
 }
 
-.contact .container .community h2 {
+#contact .container .community h2 {
   font-size: 18px;
   font-weight: bold;
 }
 
-.contact .container .community p {
+#contact .container .community p {
   font-size: 16px;
   letter-spacing: 1.4px;
 }
 
-.contact .container .community p img {
+#contact .container .community p img {
   width: 20px;
   margin-top: 10px;
   margin-right: 5px;
 }
 
-.contact .container .community ul {
+#contact .container .community ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,21 +471,22 @@ table {
   margin-top: 10px;
 }
 
-.contact .container .community ul li {
+#contact .container .community ul li {
   margin: 10px;
 }
 
-.contact .container .community ul li a {
+#contact .container .community ul li a {
   display: block;
 }
 
-.contact .container .community ul li a img {
+#contact .container .community ul li a img {
   width: 30px;
 }
 
 .footer {
   background-color: #221f1f;
   height: 80px;
+  margin-top: 40px;
 }
 
 .footer .copyright {

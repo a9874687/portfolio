@@ -11,19 +11,41 @@ $( document ).ready(function() {
         moveX   : '60%',
       });
 
-      $(".skill>.container ul").smoove({
+      $("#skill>.container ul").smoove({
         offset  : '30%',
         moveY   : '60%',
       });
 
-      $(".works>.container ul").smoove({
+      $("#works>.container ul").smoove({
         offset  : '30%',
         moveY   : '60%',
       });
 
-      $(".contact>.container").smoove({
+      $("#contact>.container").smoove({
         offset  : '30%',
         moveY   : '60%',
+      });
+
+      //------------------------選單滑動，滾動時增加紅底線------------------------------//
+      $(".scrollTop").click(function(e){
+        e.preventDefault();
+        var target = $(this).attr('href');
+        var targetPos = $(target).offset().top;
+        $("html,body").animate({scrollTop: targetPos}, 1000);
+      });
+      $(window).scroll(function(){
+        var scrollPos = $(window).scrollTop();
+        $(".scrollTop").each(function(){
+          var target = $(this).attr("href");
+          var targetPos = $(target).offset().top;
+          var targetHeight = $(target).outerHeight();
+          if(targetPos  <= scrollPos &&(targetPos + targetHeight) > scrollPos){
+            $(".scrollTop").removeClass("active")
+            $(this).addClass("active");
+          }else{
+            $(this).removeClass("active");
+          }
+        });
       });
   });
   
