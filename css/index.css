@@ -567,7 +567,7 @@ table {
 
 @media (max-width: 480px) {
   #works .container ul li {
-    width: 48%;
+    width: 100%;
     margin-top: 2%;
   }
 }
